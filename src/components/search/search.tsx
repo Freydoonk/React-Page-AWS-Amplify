@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { AsyncPaginate } from "react-select-async-paginate";
-import { GEO_API_URL, geoApiOptions } from "../../api";
+import { GEO_API_URL, geoApiOptions } from "../shared/api";
+import { CitySearchResult } from "../shared/sharedTypes";
 
 type SearchProps = {
-    onSearchChange(searchData: any): void;
+    onSearchChange(searchData: CitySearchResult): void;
 };
 
 const Search = ({ onSearchChange }: SearchProps) => {
