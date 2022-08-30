@@ -1,7 +1,8 @@
+const GEO_API_X_RapidAPI_Key = process.env.REACT_APP_GeoApiiKey ?? '';
 export const geoApiOptions = {
     method: 'GET',
     headers: {
-        'X-RapidAPI-Key': 'pVHsrbsWXEmshXBKObjgUfVstI5mp1Qdm8Ljsnzwxwbt5ZgOkm',
+        'X-RapidAPI-Key': GEO_API_X_RapidAPI_Key,
         'X-RapidAPI-Host': 'wft-geo-db.p.rapidapi.com'
     }
 };
@@ -9,4 +10,4 @@ export const geoApiOptions = {
 export const GEO_API_URL = 'https://wft-geo-db.p.rapidapi.com/v1/geo';
 
 export const WEATHER_API_URL = 'https://api.openweathermap.org/data/2.5';
-export const WEATHER_API_KEY = '9c9571fd627369c0e8ec1d25f35da7eb';
+export const WEATHER_API_KEY = process.env.REACT_APP_OpenWeatherMapApiKey;
